@@ -9,11 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HelloWorld {
 	
 	public static final String INDEX = "index";
-
-    @GetMapping("/hello")
-    public void print(){
-        System.out.println("Hello World");
-    }
     
     @GetMapping("/")
     public String welcome(ModelMap model) {
